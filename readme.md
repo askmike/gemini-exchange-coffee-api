@@ -1,4 +1,4 @@
-This is a node js api for the gemini exchange, a fork of a fork :-) . Viewable here https://github.com/KevTheRev13/gemini-exchange-coffee-api
+This is a node.js wrapper for gemini cryptocurrency exchange, a fork of a fork :-) . Viewable here https://github.com/KevTheRev13/gemini-exchange-coffee-api
 
 ### Install
 
