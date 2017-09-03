@@ -1,11 +1,11 @@
 {
   "name": "gemini-exchange-coffee-api",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "This is a node.js wrapper for gemini cryptocurrency exchange, a fork of a fork :-) . Viewable here https://github.com/KevTheRev13/gemini-exchange-coffee-api",
   "gypfile": true,
   "scripts": {
     "build": "coffee --bare --compile *.coffee",
-    "prepublish": "coffee --output lib --compile src"
+    "prepublish": "coffee --compile --output lib src"
   },
   "main": "lib/gemini.js",
   "repository": {
