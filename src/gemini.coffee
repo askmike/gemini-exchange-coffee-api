@@ -1,4 +1,4 @@
-# https://bitfinex.com/pages/api
+# https://gemini.com/pages/api
 
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0"
 
@@ -6,11 +6,11 @@ request = require 'request'
 crypto = require 'crypto'
 qs = require 'querystring'
 
-module.exports = class Bitfinex
+module.exports = class Gemini
 
 	constructor: (key, secret, nonceGenerator) ->
 
-		@url = "https://api.bitfinex.com"
+		@url = "https://api.gemini.com"
 		@version = 'v1'
 		@key = key
 		@secret = secret
@@ -37,9 +37,9 @@ module.exports = class Bitfinex
 		signature = crypto.createHmac("sha384", @secret).update(payload).digest('hex')
 
 		headers = 
-			'X-BFX-APIKEY': @key
-			'X-BFX-PAYLOAD': payload
-			'X-BFX-SIGNATURE': signature
+			'X-GEMINI-APIKEY': @key
+			'X-GEMINI-PAYLOAD': payload
+			'X-GEMINI-SIGNATURE': signature
 
 		request { url: url, method: "POST", headers: headers, timeout: 15000 }, (err,response,body)->
 			
