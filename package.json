@@ -1,33 +1,26 @@
 {
-  "name": "gemini-exchange-api",
-  "version": "1.0.3",
-  "gypfile": true,
+  "name": "gemini-exchange-coffee-api",
+  "version": "1.0.0",
+  "description": "This is a node.js wrapper for gemini cryptocurrency exchange, a fork of a fork :-) . Viewable here https://github.com/KevTheRev13/gemini-exchange-coffee-api",
+  "main": "index.js",
   "scripts": {
-    "start": "node test.js"
-  },
-  "description": "node.js wrapper for gemini cryptocurrency exchange, based on git://github.com/gferrin/bitfinex.git",
-  "main": "lib/gemini.js",
-  "scripts": {
-     "build": "coffee --bare --compile *.coffee",
-     "prepublish": "coffee --output lib --compile src"
-  },
-  "keywords": [
-	"gemini",
-    "bitfinex",
-    "litecoin",
-    "bitcoin",
-    "cryptocurrency",
-    "exchange"
-  ],
-  "author": {
-    "name": "Gabriel Ferrin",
-    "email": "garf11235813@gmail.com"},
-  "contributors": "Nick Addison, Leon Keating",
-  "dependencies": {
-    "request": "~2.30.0"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/keatingl777/bitfinex"
-  }
+    "url": "git+https://github.com/KevTheRev13/gemini-exchange-coffee-api.git"
+  },
+  "keywords": [
+    "gemini",
+    "exchange",
+    "bitcoin",
+    "api",
+    "cryptocurrency"
+  ],
+  "author": "KevTheRev13",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/KevTheRev13/gemini-exchange-coffee-api/issues"
+  },
+  "homepage": "https://github.com/KevTheRev13/gemini-exchange-coffee-api#readme"
 }
