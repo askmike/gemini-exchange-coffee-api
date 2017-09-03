@@ -4,7 +4,7 @@
 # "coffee --bare --compile --output lib src" . The precompile option was inconsistent, and this
 # is a manual workaround.
 
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0"
+# process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0"
 
 request = require 'request'
 crypto = require 'crypto'
