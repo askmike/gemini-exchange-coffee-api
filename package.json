@@ -1,16 +1,13 @@
 {
   "name": "gemini-exchange-coffee-api",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "This is a node.js wrapper for gemini cryptocurrency exchange, a fork of a fork :-) . Viewable here https://github.com/KevTheRev13/gemini-exchange-coffee-api",
   "gypfile": true,
   "scripts": {
-    "start": "node test.js"
+    "build": "coffee --bare --compile *.coffee",
+    "prepublish": "coffee --output lib --compile src"
   },
   "main": "lib/gemini.js",
-  "scripts": {
-       "build": "coffee --bare --compile *.coffee",
-       "prepublish": "coffee --output lib --compile src"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KevTheRev13/gemini-exchange-coffee-api.git"
@@ -27,5 +24,8 @@
   "dependencies": {
     "request": "~2.30.0"
   },
-  "homepage": "https://github.com/KevTheRev13/gemini-exchange-coffee-api#readme"
+  "homepage": "https://github.com/KevTheRev13/gemini-exchange-coffee-api#readme",
+  "bugs": {
+    "url": "https://github.com/KevTheRev13/gemini-exchange-coffee-api/issues"
+  }
 }
