@@ -109,6 +109,10 @@ module.exports = class Gemini
 
 		@make_public_request('trades/' + symbol, cb)
 
+	ticker: (symbol, cb) ->
+
+		@make_public_request('pubticker/' + symbol, cb)
+
 	get_symbols: (cb) ->
 
 		@make_public_request('symbols', cb)
@@ -120,6 +124,10 @@ module.exports = class Gemini
 	# #####################################
 	# ###### AUTHENTICATED REQUESTS #######
 	# #####################################   
+
+	wallet_balances: (cb) ->
+
+		@make_request('balances', cb)
 
 	new_order: (symbol, amount, price, exchange, side, type, cb) ->
 
