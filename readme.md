@@ -1,8 +1,8 @@
-This is a node.js wrapper for gemini cryptocurrency exchange, based on https://github.com/gferrin/bitfinex.git [API]https://docs.gemini.com/
+This is a node js api for the gemini exchange, a fork of a fork :-) . Viewable here https://github.com/KevTheRev13/gemini-exchange-coffee-api
 
 ### Install
 
-`npm install gemini-exchange-api`
+`npm install gemini-exchange-coffee-api`
 
 ### Example
 
