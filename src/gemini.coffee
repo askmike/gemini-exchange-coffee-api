@@ -1,5 +1,3 @@
-# https://gemini.com/pages/api
-
 # IMPORTANT: If you modify this file, you must recompile it with the coffee command 
 # "coffee --bare --compile --output lib src" . The precompile option was inconsistent, and this
 # is a manual workaround.
@@ -166,43 +164,5 @@ module.exports = class Gemini
 	account_infos: (cb) ->
 
 		@make_request('account_infos', {}, cb)
-
-	###
-		POST /v1/withdraw
-
-		Parameters:
-		'withdraw_type' :string (can be "bitcoin", "litecoin" or "darkcoin" or "mastercoin")
-		'walletselected' :string (the origin of the wallet to withdraw from, can be "trading", "exchange", or "deposit")
-		'amount' :decimal (amount to withdraw)
-		'address' :address (destination address for withdrawal)
-	###
-	withdraw: (withdraw_type, walletselected, amount, address, cb) ->
-
-		params = 
-			withdraw_type: withdraw_type
-			walletselected: walletselected
-			amount: amount
-			address: address
-
-		@make_request('withdraw', params, cb)
-
-	###
-		POST /v1/transfer
-
-		Parameters:
-		‘amount’: decimal (amount to transfer)
-		‘currency’: string, currency of funds to transfer
-		‘walletfrom’: string. Wallet to transfer from
-		‘walletto’: string. Wallet to transfer to 
-	###
-	transfer: (amount, currency, walletfrom, walletto, cb) ->
-
-		params = 
-			amount: amount
-			currency: currency
-			walletfrom: walletfrom
-			walletto: walletto
-
-		@make_request('transfer', params, cb)
 
 
