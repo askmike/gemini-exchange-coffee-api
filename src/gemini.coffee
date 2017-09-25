@@ -51,7 +51,7 @@ module.exports = class Gemini
 			try
 				result = JSON.parse(body)
 			catch error
-				return cb(null, { messsage : body.toString() } )
+				return cb(null, { message : body.toString() } )
 			
 			if result.message?
 				return cb new Error(result.message)
@@ -70,7 +70,7 @@ module.exports = class Gemini
 			try
 				result = JSON.parse(body)
 			catch error
-				return cb(null, { messsage : body.toString() } )
+				return cb(null, { message : body.toString() } )
 
 			if result.message?
 				return cb new Error(result.message)
@@ -164,5 +164,3 @@ module.exports = class Gemini
 	account_infos: (cb) ->
 
 		@make_request('account_infos', {}, cb)
-
-
