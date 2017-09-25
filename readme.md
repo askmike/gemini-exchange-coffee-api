@@ -6,6 +6,14 @@ I used coffeescript (http://coffeescript.org/) as a starting point for learning 
 
 When you npm install this package, the gemini.coffee source file is hidden. It does "not" run coffee compile upon npm install, so should you choose to get the sourcecode from Github and modify the gemini.coffee source file - you will need to re-compile it into js manually.
 
+### Gemini Sandbox
+If you would like to connect to the sandbox, change the api url located in gemini.js (or gemini.coffee if you plan to re-run the coffee compile).
+
+Change this line:
+this.url = "https://api.gemini.com";
+to this line:
+this.url = "https://api.sandbox.gemini.com";
+
 ### Install
 
 `npm install gemini-exchange-coffee-api`
