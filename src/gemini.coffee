@@ -125,7 +125,7 @@ module.exports = class Gemini
 
 	wallet_balances: (cb) ->
 
-		@make_request('balances', cb)
+		@make_request('balances', {}, cb)
 
 	new_order: (symbol, amount, price, exchange, side, type, cb) ->
 
